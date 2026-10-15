@@ -18,7 +18,8 @@
       "Bash(rsync -a --exclude node_modules --exclude .next ./ /private/tmp/claude-501/-Users-gtw-Documents-Devs-andromeda-1-0-0/b4faaf4c-15e1-48c5-a181-4d5cd0051608/scratchpad/buildcheck/)",
       "Bash(ln -s /Users/gtw/Documents/Devs/andromeda-1.0.0/node_modules /private/tmp/claude-501/-Users-gtw-Documents-Devs-andromeda-1-0-0/b4faaf4c-15e1-48c5-a181-4d5cd0051608/scratchpad/buildcheck/node_modules)",
       "Bash(npx next *)",
-      "Bash(gh auth *)"
+      "Bash(gh auth *)",
+      "Bash(grep -E \"^\\\\.\\(sitepins|claude\\)$\")"
     ],
     "additionalDirectories": [
       "/Users/gtw/Documents/Devs/andromeda-1.0.0/layouts/components"
