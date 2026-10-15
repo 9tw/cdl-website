@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "CDL",
+    "base_url": "/",
+    "favicon": "/images/cdl_remove-bg.png",
+    "logo": "/images/cdl_remove-bg.png",
+    "logo_width": "48",
+    "logo_height": "48",
+    "logo_text": "CDL"
+  },
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "https://formsubmit.co/ajax/gerdo.tewel@gmail.com",
+    "footer_content": "Casually Digital Life<br>Make your digital bussiness less drama",
+    "copyright": "Distributed by <a href=\"https://themewagon.com\" target=\"_blank\" rel=\"noopener noreferrer\">ThemeWagon</a> • Designed By <a href=\"https://themefisher.com\" target=\"_blank\" rel=\"noopener noreferrer\">Themefisher</a> • Developed by <a href=\"https://github.com/9tw\" target=\"_blank\" rel=\"noopener noreferrer\">Casually Digital Life</a>"
+  },
+  "contact_info": {
+    "phone": "+887887998",
+    "email": "gerdotradawijaya@gmail.com",
+    "instagram": "https://www.instagram.com/cdl_22",
+    "tiktok": "https://www.tiktok.com/@9tradaw",
+    "location": "Arbiru Beach Hotel (Dili, Timor-Leste)",
+    "maps": "https://maps.app.goo.gl/mjn6Y5cJD1fvdFVE8",
+    "location2": "Ruko Centra Niaga (Malang, Indonesia)",
+    "maps2": "https://maps.app.goo.gl/QstpkEPpuiPaLBGt7"
+  },
+  "nav_button": {
+    "enable": true,
+    "label": "Contact Us",
+    "link": "https://wa.me/+6285389504672?text=Hi CDL Team. Can you help me build my website?"
+  },
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Andromeda-light Nextjs Blog Template"
+  },
+  "call_to_action": {
+    "enable": true,
+    "title": "Get Andromeda Now",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas <br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "button": {
+      "label": "Download The Theme",
+      "link": "https://themewagon.com/themes/andromeda/"
+    },
+    "subtitle": "Contact Us",
+    "description": "Have a project in mind, need a fast site fix, or want to explore how practical AI workflows<br>can save your business time? Send us a message and let's discuss your goals."
+  },
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}

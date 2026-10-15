@@ -1,0 +1,38 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Service",
+      "url": "#service"
+    },
+    {
+      "name": "Projects",
+      "url": "#project"
+    },
+    {
+      "name": "Testimonials",
+      "url": "#testimonial"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Custom Web",
+      "url": "/about"
+    },
+    {
+      "name": "Repair Web",
+      "url": "/blog"
+    },
+    {
+      "name": "AI Workflows",
+      "url": "/terms-policy"
+    }
+  ]
+}
