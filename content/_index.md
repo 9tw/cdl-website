@@ -2,7 +2,8 @@
 banner:
   title: "Custom Web. Fast Fixes. Smart AI."
   sub: "We engineer clean web applications, repair broken code on demand, and integrate custom AI solutions built around your exact workflow"
-  image: /videos/Jumbotron_Motion_Graphics_2.mp4
+  image: /videos/banner.mp4
+  poster: /videos/banner-poster.jpg
   link:
     label: Get free Version
     href: "https://themewagon.com/themes/andromeda/"

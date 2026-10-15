@@ -5,11 +5,22 @@ import ImageFallback from "@layouts/components/ImageFallback";
 import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const HomeBanner = ({ banner: bannerData, brands }) => {
+  const videoRef = useRef(null);
+
+  // Safari only autoplays videos that are muted as a DOM property, which React
+  // doesn't always set, so mute and start playback explicitly
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = true;
+    video.play().catch(() => {});
+  }, []);
+
   useEffect(() => {
     const ctx2 = gsap.context(() => {
       const banner = document.querySelector(".banner");
@@ -175,10 +186,12 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                 </div>
                 <div className="col-10">
                   <video
+                    ref={videoRef}
                     className="banner-img mx-auto h-auto w-full max-w-3xl rounded-2xl opacity-0"
                     src={bannerData.image}
-                    width={1170}
-                    height={666}
+                    poster={bannerData.poster}
+                    width={1280}
+                    height={720}
                     autoPlay
                     muted
                     loop
