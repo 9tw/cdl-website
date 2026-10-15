@@ -13,12 +13,33 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
   const videoRef = useRef(null);
 
   // Safari only autoplays videos that are muted as a DOM property, which React
-  // doesn't always set, so mute and start playback explicitly
+  // doesn't always set, so mute and start playback explicitly. iOS can still
+  // refuse autoplay (e.g. Low Power Mode); then start on the first tap.
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
     video.muted = true;
-    video.play().catch(() => {});
+    let unmounted = false;
+
+    const playOnInteraction = () => {
+      video.play().catch(() => {});
+      removeListeners();
+    };
+    const removeListeners = () => {
+      document.removeEventListener("touchend", playOnInteraction);
+      document.removeEventListener("click", playOnInteraction);
+    };
+
+    video.play().catch(() => {
+      if (unmounted) return;
+      document.addEventListener("touchend", playOnInteraction, { once: true });
+      document.addEventListener("click", playOnInteraction, { once: true });
+    });
+
+    return () => {
+      unmounted = true;
+      removeListeners();
+    };
   }, []);
 
   useEffect(() => {
